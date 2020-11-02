@@ -123,7 +123,7 @@ function addInputText(parent, placeholderText, insertBefore, inputText=""){
       "placeholder": placeholderText,
       click: function(){
         let ib = insertBefore;
-          ib ? $(this).parent().remove() : $(this).closest("tr").remove();
+          ib ? $(this).closest("input").remove() : $(this).closest("tr").remove();
       }
     }).appendTo(divAppend);
 }
