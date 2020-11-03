@@ -242,7 +242,6 @@ function initiativesList2(parent, dropContainer, mode=1){
 
   $(".dropOnMe").each(function( index) {
     $(this).find("li").each(function(i,e){
-      console.log(e);
       $("<li />",{
         "class": "list-group-item",
         text: $(e).text()
